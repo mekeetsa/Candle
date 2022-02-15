@@ -11,7 +11,7 @@ script.importExtension("qt.uitools");
 var appPath = app.path;
 var pluginPath = script.path;
 var loader = new QUiLoader();
-var settings = new QSettings(pluginPath + "/settings.ini", QSettings.IniFormat);
+var settings = new QSettings(QDir.homePath() + "/.Candle/settings.ini", QSettings.IniFormat);
 var buttonSize = 48;
 var deviceState = -1;
 var storedButtons = new Array();

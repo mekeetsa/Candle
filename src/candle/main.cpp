@@ -7,6 +7,7 @@
 #include <QLocale>
 #include <QTranslator>
 #include <QFile>
+#include <QDir>
 #include <QStyleFactory>
 #include <QFontDatabase>
 #include <QMessageBox>
@@ -40,7 +41,7 @@ int main(int argc, char *argv[])
     glf.setSamples(8);
     QGLFormat::setDefaultFormat(glf);
 
-    QSettings set(a.applicationDirPath() + "/settings.ini", QSettings::IniFormat);
+    QSettings set(QDir::homePath() + "/.Candle/settings.ini", QSettings::IniFormat);
     set.setIniCodec("UTF-8");
     QString loc = set.value("language", "en").toString();
 

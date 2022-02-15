@@ -109,7 +109,7 @@ frmMain::frmMain(QWidget *parent) :
     m_spindleCW = true;
 
     // Loading settings
-    m_settingsFileName = qApp->applicationDirPath() + "/settings.ini";
+    m_settingsFileName = QDir::homePath() + "/.Candle/settings.ini";
     preloadSettings();
 
     m_settings = new frmSettings(this);
