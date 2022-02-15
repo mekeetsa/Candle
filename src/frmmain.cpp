@@ -85,7 +85,7 @@ frmMain::frmMain(QWidget *parent) :
                        << "black";
 
     // Loading settings
-    m_settingsFileName = qApp->applicationDirPath() + "/settings.ini";
+    m_settingsFileName = QDir::homePath() + "/.Candle1/settings.ini";
     preloadSettings();
 
     m_settings = new frmSettings(this);
