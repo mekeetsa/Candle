@@ -6,7 +6,7 @@ CameraPlugin::CameraPlugin(QObject *parent): QObject(parent), m_initialized(fals
 
 }
 
-void CameraPlugin::initialize(QDesignerFormEditorInterface *core)
+void CameraPlugin::initialize(QDesignerFormEditorInterface *)
 {
     if (m_initialized) return;
 

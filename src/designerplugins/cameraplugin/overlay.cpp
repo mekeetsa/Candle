@@ -54,7 +54,7 @@ int Overlay::aimColor() const
     return m_aimColor;
 }
 
-void Overlay::paintEvent(QPaintEvent *e)
+void Overlay::paintEvent(QPaintEvent *)
 {
     QPainter p(this);
 
